@@ -5,16 +5,19 @@
   Description: Styling for the index.html file
 */
 
+/** The styling for the body content. */
 body {
   font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
 
+/** The styling for the container ID content. */
 #container {
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
+/** The styling for the headers.*/
 h1, h2, h3, h4 {
   background-color: #3C275A;
   color: white;
@@ -22,16 +25,19 @@ h1, h2, h3, h4 {
   padding: 10px;
 }
 
+/** The styling for the anchors.*/
 a {
   color: #453674;
   text-decoration: none;
 }
 
+/** The styling for the anchors being hovered.*/
 a:hover {
   background-color: #D6A800;
   color: #4F3674;
 }
 
+/** The styling for the anchors that were visited.*/
 a:visited {
   color: #3C275A;
 }

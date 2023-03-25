@@ -5,26 +5,37 @@
   Description: CSS styling to be used for WEB-231 assignments
 */
 
+/** The styling for the body content. */
+body {
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+/** The styling for the use of a card. */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
+/** The styling for the use of a card title. */
 .card-title {
   text-align: center;
   font-size: 2em;
   color: #4F3674;
   font-weight: 400;
+  padding: 5px;
 }
 
+/** The styling for the use of a card's content. */
 .card-content {
   padding: 2px 16px;
 }
 
+/** The styling for when a card is being hovered over. */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+/** The styling for the use of a button. */
 .btn {
   border: none;
   text-align: center;
@@ -37,16 +48,19 @@
   color: #000;
 }
 
+/** The styling for the button's primary coloring. */
 .btn-primary {
   background-color: #4F3674;
   color: #fff;
 }
 
+/** The styling for the button's primary coloring when being hovered over. */
 .btn-primary:hover {
   background-color: #D6A800;
   color: #4F3674;
 }
 
+/** The styling for use of an input field. */
 .input {
   padding: 12px 20px;
   margin: 8px 0;
@@ -56,15 +70,51 @@
   box-sizing: border-box;
 }
 
+/** The styling for the use of 100% width.  */
 .full-width {
   width: 100%;
 }
 
+/** The styling for the use of a form. */
 .form {
   display: inline-grid;
   grid-template-columns: auto;
 }
 
+/** The styling for the form's padding. */
 .form-field {
   padding: 20px;
+}
+
+/** The styling for the anchor that returns users back to the landing page. */
+.return-home {
+  color: #4f3674;
+  text-decoration: none;
+}
+
+/** The styling for the landing page anchor when it is being hovered over.  */
+.return-home:hover {
+  background-color: #D6A800;
+  color: #4F3674;
+}
+
+/** The styling for the landing page anchor when it has been visited. */
+.return-home:visited {
+  color: #3C275A;
+}
+
+/** The styling for the h1 main title. */
+.app-header {
+  text-align: center;
+  font-weight: 400;
+}
+
+/** The styling for the use of a drop down menu. */
+.drop-down-menu {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }

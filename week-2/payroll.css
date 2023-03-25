@@ -1,0 +1,24 @@
+/**
+  Title: payroll.css
+  Author: John Davidson
+  Date: 03/25/2023
+  Description: Styling for the payroll.html file.
+*/
+
+/** The styling for the headers.*/
+h1, h3 {
+  background-color: #3C275A;
+  color: white;
+  border: 1px solid #D6A800;
+  padding: 10px;
+}
+
+/** The styling for the employee's information record border. */
+ul {
+  border: 1px dotted red;
+}
+
+/** The styling for the main title. */
+#payroll-header {
+  text-align: center;
+}

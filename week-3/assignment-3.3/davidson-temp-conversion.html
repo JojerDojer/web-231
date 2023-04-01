@@ -1,0 +1,72 @@
+<!--
+  Title: davidson-temp-conversion.html
+  Author: John Davidson
+  Data: 04/01/2023
+  Description: The html document for WEB-231 assignment 3.3.
+-->
+
+<!DOCTYPE html>
+<html>
+
+  <!-- The metadata for the document. -->
+  <head>
+    <title>WEB 231 - Enterprise JavaScript I.</title>
+
+    <link rel="stylesheet" type="text/css" href="../../global.css">
+    <link rel="stylesheet" type="text/css" href="davidson-temp-conversion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- The body content of the document. -->
+  <body>
+
+    <!-- The container ID holding the content of the document. -->
+    <div id="container">
+      <h1 class="app-header">Welcome to the Temperature Conversion App!</h1>
+
+      <!-- The card class parenting the div elements that make up the conversion card title and content. -->
+      <div class="card">
+        <div class="card-title">Fahrenheit to Celsius Converter</div>
+        <div class="card-content">
+
+          <!-- The form class holding the div element that makes up the form field of the card. -->
+          <div class="form">
+            <div class="form-field">
+
+              <!-- The label and input elements for the user to insert a temperature in fahrenheit they want to convert. -->
+              <label for="temp">Fahrenheit value:</label>
+              <input id="userEntry" type="text" name="temp"></input>
+            </div>
+            <div class="form-field">
+
+              <!-- The button element that when clicked will call the JavaScript function to convert fahrenheit to Celsius. -->
+              <button type="button" onclick="calcCelsius()" class="btn btn-primary full-width">Convert Temperature</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The card-results div class created for the purpose of positioning the return home button directly below the card via css. -->
+      <div class="card-results">
+
+        <!-- The card class parenting the div elements that make up the results card title and content. -->
+        <div class="card">
+          <div class="card-title">Conversion Results</div>
+          <div class="card-content">
+
+            <!-- The section of the results card that will display the converted temperature. -->
+            <div id="results"></div>
+          </div>
+        </div>
+
+        <!-- The anchor tag that returns users back to the landing page when clicked. -->
+        <a href="../../index.html" class="return-home">Return</a>
+      </div>
+    </div>
+
+    <!-- The script tag that links the JavaScript file to this html document. -->
+    <script src="davidson-temp-conversion.js"></script>
+  </body>
+</html>

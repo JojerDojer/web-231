@@ -1,0 +1,18 @@
+/**
+  Title: davidson-favorites.css
+  Author: John Davidson
+  Date: 04/01/2023
+  Description: The css page for WEB-231 exercise 3.2.
+*/
+
+/** Changing the alignment and width of the card class. */
+.card {
+  width: 600px;
+  margin: 3% auto 0;
+
+}
+
+/** Spacing the vertical distance between each button. */
+.btn {
+  margin-bottom: 40px;
+}

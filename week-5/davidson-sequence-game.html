@@ -1,0 +1,77 @@
+<!--
+  Title: davidson-sequence-game.html
+  Author: John Davidson
+  Data: 04/15/2023
+  Description: The html document for WEB-231 assignment 5.2.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- The metadata for the document. -->
+  <head>
+    <title>WEB 231 - Enterprise JavaScript I.</title>
+
+    <link rel="stylesheet" type="text/css" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="davidson-sequence-game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- The body content of the document. -->
+  <body>
+
+    <!-- The container ID holding the content of the document. -->
+    <div id="container">
+      <h1 class="app-header">Welcome to the sequence game!</h1>
+
+      <!-- The card class parenting the div elements that make up the sequence game card title and content. -->
+      <div class="card">
+        <div class="card-title">Sequence Selection Form</div>
+        <div class="card-content">
+
+          <!-- The form class holding the div element that makes up the form field of the card. -->
+          <div class="form">
+            <div class="form-field">
+
+              <!-- The label and select elements designed for a user pick a category of numbers. -->
+              <label for="userSelect">Choose a number sequence:</label>
+              <select name="userSelect" id="userSelect">
+                <option>--Select--</option>
+                <option value="numbers">Numbers</option>
+                <option value="even">Even Numbers</option>
+                <option value="odd">Odd Numbers</option>
+              </select>
+            </div>
+            <div class="form-field">
+
+              <!-- The button element that when clicked will call the JavaScript function to display a sequence of numbers based on the user's selection. -->
+              <button type="button" onclick="displaySequence()" class="btn btn-primary full-width">Display Sequence</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The card-results div class created for the purpose of positioning the return home button directly below the card via css. -->
+      <div class="card-results">
+
+        <!-- The card class parenting the div elements that make up the results card title and content. -->
+        <div class="card">
+          <div class="card-title">Sequence Results</div>
+          <div class="card-content">
+
+            <!-- The div class that will display the results of the sequence game. -->
+            <div id="results"></div>
+          </div>
+        </div>
+
+        <!-- The anchor tag that returns users back to the landing page when clicked. -->
+        <a href="../index.html" class="return-home">Return</a>
+      </div>
+    </div>
+
+    <!-- The script tag that links the JavaScript file to this HTML document. -->
+    <script src="davidson-sequence-game.js"></script>
+  </body>
+</html>

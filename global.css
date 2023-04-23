@@ -119,3 +119,32 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+/** The styling for table size. */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/** The styling for the th element and table title. */
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4F3674;
+  color: white;
+}
+
+/** The styling for the td and th elements border and padding */
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/** The styling of the tr element for cursor hovering effects. */
+tr:hover {
+  background-color: #D6A800;
+  color: #4f3674;
+  cursor: pointer;
+}

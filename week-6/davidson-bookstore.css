@@ -1,9 +1,9 @@
 /**
 ============================================
-; Title: davidson-sequence-game.css
+; Title: davidson-bookstore.css
 ; Author: John Davidson
-; Date: 04/15/2023
-; Description: The css page for WEB-231 assignment 5.2.
+; Date: 04/23/2023
+; Description: The css page for WEB-231 assignment 6.2.
 ============================================
 */
 
@@ -13,8 +13,7 @@
   margin: 3% auto 0;
 }
 
-/** The styling for the results of the sequence game. */
-#results {
-  text-align: center;
-  font-size: 28px;
+/** Changes the heading style of the book, author, and publisher category. */
+h3 {
+  font-weight: lighter;
 }

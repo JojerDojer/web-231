@@ -1,0 +1,108 @@
+<!--
+  Title: davidson-calculator.html
+  Author: John Davidson
+  Data: 04/29/2023
+  Description: The html document for WEB-231 assignment 7.2.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- The metadata for the document. -->
+  <head>
+    <title>WEB 231 - Enterprise JavaScript I.</title>
+
+    <link rel="stylesheet" type="text/css" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="davidson-calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- The body content of the document. -->
+  <body>
+
+    <!-- The container ID holding the content of the document. -->
+    <div id="container">
+      <h1 class="app-header">Welcome to the Calculator App!</h1>
+
+      <!-- The div class that embodies all of the elements in the multiply card. -->
+      <div class="calc-container">
+
+        <!-- The card class parenting the div elements that make up the calculation card title and content. -->
+        <div class="card">
+          <div class="card-title">Multiply Form</div>
+          <div class="card-content">
+
+            <!-- The form class holding the div element that makes up the form field of the card. -->
+            <div class="form">
+              <div class="form-field">
+
+                <!-- The input elements designed for a user to enter numbers. -->
+                <input id="mulEntry1" type="text">
+                <input id="mulEntry2" type="text">
+              </div>
+              <div class="form-field">
+
+                <!-- The button element that when clicked will call the JavaScript function to calculate the numbers entered. -->
+                <button type="button" onclick="displayMultiplyResults()" class="btn btn-primary full-width">Multiply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The card containing the content for performing a multiply calculation. -->
+        <div class="card">
+          <div class="card-title">Results</div>
+          <div class="card-content">
+
+            <!-- The div class that will display the results of the multiply card. -->
+            <div id="mul-results"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The div class that embodies all of the elements in the divide card. -->
+      <div class="calc-container">
+
+        <!-- The card class parenting the div elements that make up the calculation card title and content. -->
+        <div class="card">
+          <div class="card-title">Divide Form</div>
+          <div class="card-content">
+
+            <!-- The form class holding the div element that makes up the form field of the card. -->
+            <div class="form">
+              <div class="form-field">
+
+                <!-- The input elements designed for a user to enter numbers. -->
+                <input id="divEntry1" type="text">
+                <input id="divEntry2" type="text">
+              </div>
+              <div class="form-field">
+
+                <!-- The button element that when clicked will call the JavaScript function to calculate the numbers entered. -->
+                <button type="button" onclick="displayDivideResults()" class="btn btn-primary full-width">Divide</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The card that embodies the all of content for the divide results. -->
+        <div class="card">
+          <div class="card-title">Results</div>
+          <div class="card-content">
+
+            <!-- The div class that will display the results of the divide calculation. -->
+            <div id="div-results"></div>
+          </div>
+        </div>
+      </div>
+        <!-- The anchor tag that returns users back to the landing page when clicked. -->
+        <a href="../index.html" class="return-home">Return</a>
+
+    </div>
+
+    <!-- The script tag that links the JavaScript file to this html document. -->
+    <script src="davidson-calculator.js"></script>
+  </body>
+</html>

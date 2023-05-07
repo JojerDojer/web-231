@@ -1,0 +1,76 @@
+<!--
+  Title: davidson-in-n-out-books.html
+  Author: John Davidson
+  Data: 05/07/2023
+  Description: The html document for WEB-231 assignment 8.2.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- The metadata for the document. -->
+  <head>
+    <title>WEB 231 - Enterprise JavaScript I.</title>
+
+    <link rel="stylesheet" type="text/css" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="davidson-in-n-out-books.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- The body content of the document. -->
+  <body>
+
+    <!-- The container ID holding the content of the document. -->
+    <div id="container">
+      <h1 class="app-header">Welcome to In-N-Out-Books</h1>
+
+      <!-- The card class parenting the div elements that make up the "My Favorites" title and content. -->
+      <div class="card">
+        <div class="card-title">My Favorites</div>
+        <div class="card-content">
+
+          <!-- The form class holding the div element that makes up the form field of the card. -->
+          <div class="form">
+            <div class="form-field">
+
+              <!-- The label and select elements designed for a user to select books or authors category. -->
+              <label for="userSelect">Choose a listing:</label>
+              <select name="userSelect" id="userSelect">
+                <option>--Select--</option>
+                <option value="books">Top 3 Favorite Books</option>
+                <option value="authors">Top 3 Favorite Authors</option>
+              </select>
+            </div>
+            <div class="form-field">
+
+              <!-- The button element that when clicked will call the JavaScript function to display a list of books and authors. -->
+              <button type="button" onclick="display()" class="btn btn-primary full-width">Display Listing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The card-results div class created for the purpose of positioning the return home button directly below the card via css. -->
+      <div class="card-results">
+
+        <!-- The card class parenting the div elements that make up the results card title and content. -->
+        <div class="card">
+          <div class="card-title">Results</div>
+          <div class="card-content">
+
+            <!-- The div class that will display the user's selection of books and authors. -->
+            <div id="results"></div>
+          </div>
+        </div>
+
+        <!-- The anchor tag that returns users back to the landing page when clicked. -->
+        <a href="../index.html" class="return-home">Return</a>
+      </div>
+    </div>
+
+    <!-- The script tag that links the JavaScript file to this HTML document. -->
+    <script src="davidson-in-n-out-books.js"></script>
+  </body>
+</html>

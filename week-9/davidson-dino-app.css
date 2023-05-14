@@ -1,0 +1,39 @@
+/**
+============================================
+; Title: davidson-dino-app.css
+; Author: John Davidson
+; Date: 05/14/2023
+; Description: The css page for WEB-231 assignment 9.2.
+============================================
+*/
+
+/** Changing the alignment and width of the card and card-results class. */
+.card, .card-results {
+  width: 600px;
+  margin: 3% auto 0;
+}
+
+/** Changes the heading style of the book and author category. */
+h3 {
+  font-weight: lighter;
+}
+
+/** Centers the text and increases font-size of results card. */
+#results {
+  text-align: center;
+  font-size: 26px;
+
+}
+
+/** Increases the width of the form div to 100%.*/
+.form {
+  width: 100%;
+}
+
+/** Adjusts the margins to better position the buttons and labels.*/
+input {
+  margin: 25px;
+  margin-right: 5px;
+}
+
+
